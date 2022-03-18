@@ -5,5 +5,6 @@ im gonna try to make the project in a way that anyone can have thier own persona
 
 you can view it through this link 
 
+https://simplemindedguy.github.io/Portfolio/
  
 enjoy 
