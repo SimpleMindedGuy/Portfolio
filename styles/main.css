@@ -2439,9 +2439,12 @@ input[type="checkbox"]:checked + .permissions > label
 .cards 
 {
     display: grid;
-    grid-template-columns:  repeat(auto-fit,200px);
+    /* grid-template-columns:  repeat(auto-fit,200px); */
+    display: flex;
+    flex-basis: 300px;
+    flex-flow: wrap;
     justify-content: center;
-    gap: 50px
+    gap: 15px
 }
 
 .card 
@@ -2449,7 +2452,7 @@ input[type="checkbox"]:checked + .permissions > label
     border: var(--normal-text-color) 2px solid;
     border-radius: var(--border-radius);
     background: rgb(84,3,177);
-    background: linear-gradient(0deg, var(--title-color) 1%, var(--option-text-color) 100%);
+    background: linear-gradient(0deg, #25292a 1%, var(--option-text-color) 100%);
     display: grid;
     padding: var(--padding);
     width: 200px;
