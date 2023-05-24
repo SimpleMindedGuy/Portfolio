@@ -1,0 +1,194 @@
+
+
+:root{
+    /* Standard sizes variables  mostly in "rem" unit to ensure better scalability  */
+
+    /* this is going to be used as the base for the rem unit*/
+    --REM-size : 16px;
+
+    --Nav-Bar-height : 60px;
+    
+    --Paragraph-size : 1rem;
+    --H1-size : 3.2rem;
+    --H2-size : 2.8rem;
+    --H3-size : 2.4rem;
+    --H4-size : 2.0rem; 
+    --H5-size : 1.6rem;
+    --H6-size : 1.2rem;
+
+    --Padding-size : 0.5rem;
+    --Border-radius : 0.8rem;
+    --Border-size : 0.1rem;
+
+    --Large-Icon-Size : 2rem;
+    --Small-Icon-Size : 1rem;
+    --User-Image-Size: 2.5rem;
+
+
+    --Minimum-Container-Image-size: 300px;
+    --Maximum-Container-Image-size: 400px;
+    /* Colors are going to be moved later to 2 different theme categories */
+    --Background-Color : #0f0f0f;
+    --Navbar-Color : #000000;
+
+    --Main-Color : #681dff;
+    --H2-Color : #2e2eff;
+    --H3-Color : #47ff14;
+    --H4-Color :  #ffe100;
+    --H5-Color: #ff8000;
+    --H6-Color: #fe0808;
+
+    --H7-Color: #00c184;
+    --H8-Color: #86007f;
+    --H9-Color: #004eb5;
+    --H10-Color: #b9004d;
+    --H11-Color: #ad00b9;
+    --H12-Color: #b9003e;
+
+    --Indicator-Color : #ffffff;
+    --Border-color : #6c6c6c ;
+/* #3c3c3c ; */
+
+    --Text-Color : #dfdfdf;
+    --Input-Background-Color : #242424;
+    --Input-Highlight-Color: #383838;
+    --Complementary-color: #1981e8;
+    --Row-Background-Color: #000000;
+
+    --Button-Background-Color : #121212;
+
+    
+}
+
+/* Scroll bar */
+*{
+    scrollbar-color: var(--Main-Color) var(--Background-Color);
+    scrollbar-width: thick;
+    scroll-behavior: smooth;
+    
+}
+
+/*  */
+*{
+    margin: 0;
+    padding: 0;
+    scrollbar-width : thin;
+}
+
+
+html {
+    font-size: var(--REM-size);
+    
+}
+body
+{
+    background-color: var(--Background-Color);
+    overflow-x: hidden;
+}
+
+
+
+input[type="text"]
+{
+    resize: none;
+    border-width: var(--Border-size) ;
+    border-radius: var(--Border-radius);
+    border-color: var(--Text-Color);
+    border-color: var(--Border-color);
+    border-style: solid;
+    background-color: var(--Input-Background-Color );
+    padding: calc(var(--Padding-size));
+    color: var(--Text-Color);
+    font-size: 1rem;
+    height: calc(var(--Padding-size) * 1 + (1rem * var(--lines)));
+    overflow-y: auto;
+    transition: height 0.5s ease, border 0.2s ease;
+    width: calc(99% - var(--Padding-size) * 2);
+}
+
+
+.Button
+{
+    position: absolute;
+    justify-self: center;
+    padding: calc(var(--Padding-size) * 0.5);
+    
+    border-radius: var(--Border-radius);
+    border-color: var(--Text-Color);
+    border-color: var(--Border-color);
+    border-width: calc(var(--Border-size) * 1 );
+
+    color: var(--Text-Color);
+    font-family: Roboto;
+    font-weight: 600;
+    border-style: solid;
+    cursor: pointer;
+    background-color: var(--Button-Background-Color);
+    font-size: var(--Paragraph-size);
+    
+    bottom: calc( calc( var(--Padding-size) * 1.5 + var(--Paragraph-size) + var(--Border-size) * 2) * -1);
+
+    transition: border-color 0.2s ease;
+}
+
+.Button
+{
+    position: static;
+}
+
+
+.container
+{
+    display: flex;
+    gap: 0;
+    padding: 0;
+    align-items: end;
+    height: 300px;
+    place-self: center ;
+    width: 100%;
+    height: calc(100% - 170px);
+    position: fixed;
+    bottom: 0;
+}
+
+.container>.column
+{
+    min-width: 1px;
+    width: max-content;
+    margin: 0;
+    padding: 0;
+    height: var(--size);
+    /* border: var(--Background-Color) 1px solid; */
+    background-color: var(--Text-Color);
+    width: 100%;
+    max-width: -moz-available;
+    
+    transition: all ease 0.0s ,background-color 0.01s ease;
+}
+
+.options{
+    display: flex;
+    gap: var(--Padding-size);
+    position: fixed;
+    top: 75px;
+    right: 0;
+    left : 0;
+    height: 60px;
+    place-items: center;
+    place-content: center;
+}
+.indicator
+{
+    border-radius: var(--Border-radius);
+    border-style: solid;
+    border-color: var(--Border-color);
+    padding : 0px calc(var(--Padding-size) * 0.5);
+}
+
+
+input[type="text"]
+{
+    width: 100px;
+}
+
+

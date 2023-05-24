@@ -98,7 +98,7 @@ input::-webkit-inner-spin-button {
 
     /* nav bar styling */
     --nav-bar-height : 75px;
-    --nav-bar-grid : 2fr 6fr 2fr;
+    --nav-bar-grid : 2.5fr 6fr 2.5 fr;
     --nav-menu-height :400px;
 
     /* borders */
@@ -168,7 +168,7 @@ input::-webkit-inner-spin-button {
 
 html[dark = 'true']{
     /* background color */
-    --body-background-color : #151515;
+    --body-background-color : #252525;
     /*  navigation bar color */
     --nav-bar-color : rgb(0, 0, 0);
     --nav-menu-color : rgba(0, 0, 0, 0.90);
@@ -242,6 +242,7 @@ h1,h2,h3,h4,h5,h6
     font-family: 'pixel';
     font-size: var(--h1-size);
     font-weight: bolder;
+    text-align: center;
     width: auto;
     max-width: 100%;
     position: relative;
@@ -423,7 +424,7 @@ img
 {
     top: 0px;
     left: 0px;
-    right: 10px;
+    right: 0px;
     z-index: 5;
     display: grid;
     position: fixed;
@@ -475,17 +476,21 @@ img
 
 }
 
+
 .nav-bar-menu a , .nav-bar-menu p
 {
     font-size: var(--h5-size);
     place-self: center;
+    
 }
+
 
 
 .nav-bar a:hover , .nav-bar a.at , .nav-bar-menu a:hover , .nav-bar-menu a.at
 {
     color: var(--normal-text-color);
     border-color: var(--normal-text-color);
+    
 }
 
 .logo a 
@@ -509,6 +514,14 @@ img
     justify-content: space-evenly;
 }
 
+.nav-bar-options  svg,
+.nav-bar-menu svg{
+    height: 40px;
+    cursor: pointer;
+    border-radius: 0px !important;
+    fill: var(--normal-text-color);
+    transition: all 0.5s ease;
+}
 .burger 
 {
     position: relative;
@@ -557,14 +570,14 @@ input[type="checkbox"]:checked + label.burger + div.nav-bar-menu
 .nav-bar-menu > *
 {
     position: relative;
-    top:-700px;
+    top:calc(-300px );
 }
 
 
-.nav-bar-menu.active , input[type="checkbox"]:checked + label.burger + div.nav-bar-menu  > *
+.nav-bar-menu.active , input[type="checkbox"]:checked + label.burger + div.nav-bar-menu  > a
 {
-    transform: translate(0 , 750px);
-    transition: transform 0.4s calc(var(--order) * 0.2s) cubic-bezier(.63,.37,.37,.63),border 0.5s ease ;
+    top : 0px;
+    transition:top 0.5s calc(var(--order) * 0.15s)  cubic-bezier(1,-0.61,0,1.48),border 0.2s ease ;
 }
 
 input[type="checkbox"]:checked + label.burger  > .line1 , .line1.active
@@ -589,7 +602,7 @@ input[type="checkbox"]:checked + label.burger  > .line3 ,.line3.active
     z-index: 3;
     align-items: start;
     flex-direction: column;
-    padding-top:  calc(var(--nav-bar-height) + 10px);
+    padding-top:  calc(var(--nav-bar-height) );
     /* padding-top : 10px; */
     /* margin-top : calc(var(--nav-bar-height) ); */
     /* padding-bottom:100px; */
@@ -1236,7 +1249,6 @@ input[type="checkbox"]:checked + label.edit-button + .option-menu > .option , in
 {
     text-align: center;
     justify-self: center;
-    text-align: center;
     justify-self: center;
     font-family: pixel !important;
     font-size: var(--h6-size);
@@ -1740,9 +1752,11 @@ input[type="checkbox"]:checked + .skill-ui
 
 .bio
 {
-    text-align: center;
+    text-align: start;
     margin-bottom: 10px;
+    width : 80%;
 }
+
 
 h2 > .profile-edit
 {
@@ -2452,7 +2466,7 @@ input[type="checkbox"]:checked + .permissions > label
     border: var(--normal-text-color) 2px solid;
     border-radius: var(--border-radius);
     background: rgb(84,3,177);
-    background: linear-gradient(0deg, #25292a 1%, var(--option-text-color) 100%);
+    background: linear-gradient(15deg, var(--visited-anchor-text-color) 3%, var(--normal-text-color) 110%);
     display: grid;
     padding: var(--padding);
     width: 200px;
@@ -2460,6 +2474,7 @@ input[type="checkbox"]:checked + .permissions > label
     place-items:  center;
     place-self: center;
     margin : auto;
+    transition: all 0.5s ease;
 }
 
 
@@ -2883,14 +2898,11 @@ input[type="checkbox"]:checked + .permissions > label
     {
         display: grid;
     }
-    
-    .nav-bar-options > a 
-    {
-        display: none;
-    }
+
     .nav-bar-menu
     {
         display: grid;
     }
 
 }
+
