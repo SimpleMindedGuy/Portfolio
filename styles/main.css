@@ -168,7 +168,7 @@ input::-webkit-inner-spin-button {
 
 html[dark = 'true']{
     /* background color */
-    --body-background-color : #252525;
+    --body-background-color : #181818;
     /*  navigation bar color */
     --nav-bar-color : rgb(0, 0, 0);
     --nav-menu-color : rgba(0, 0, 0, 0.90);
@@ -242,11 +242,15 @@ h1,h2,h3,h4,h5,h6
     font-family: 'pixel';
     font-size: var(--h1-size);
     font-weight: bolder;
-    text-align: center;
+    text-align: start;
     width: auto;
     max-width: 100%;
     position: relative;
     display: grid;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    display: contents;
+
 }
 
 h2{
@@ -310,6 +314,24 @@ textarea,input[type="text"]
     height: var(--p-size);
 }
 
+code{
+    background-color: var(--border-color);
+    color: var(--note-color);
+    border-radius: var(--border-radius);
+    padding: 0px var(--padding);
+    place-self: center;
+}
+
+blockquote
+{
+    background-color: var(--border-color);
+    color: var(--note-color);
+    border-radius: var(--border-radius);
+    padding: var(--padding);
+    word-wrap: pre-line;
+    white-space: pre;
+
+}
 .post-input
 {
     margin: 0 auto;
@@ -1494,11 +1516,6 @@ label:active > .arrow
     border-radius: var(--border-radius);
 }
 
-.project h3,.project  h2 ,.project  h3 ,.project  h4 ,.project  h5 ,.project h6,.blog  h1 ,.blog  h2 ,.blog  h3 , .blog  h4 ,.blog  h5 ,.blog  h6
-{
-
-    place-self: start;
-}
 .blog 
 {
     display: grid;

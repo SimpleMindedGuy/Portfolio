@@ -4,32 +4,15 @@
     /* Standard sizes variables  mostly in "rem" unit to ensure better scalability  */
 
     /* this is going to be used as the base for the rem unit*/
-    --REM-size : 16px;
 
-    --Nav-Bar-height : 60px;
-    
-    --Paragraph-size : 1rem;
-    --H1-size : 3.2rem;
-    --H2-size : 2.8rem;
-    --H3-size : 2.4rem;
-    --H4-size : 2.0rem; 
-    --H5-size : 1.6rem;
-    --H6-size : 1.2rem;
 
     --Padding-size : 0.5rem;
     --Border-radius : 0.8rem;
-    --Border-size : 0.1rem;
-
-    --Large-Icon-Size : 2rem;
-    --Small-Icon-Size : 1rem;
-    --User-Image-Size: 2.5rem;
 
 
-    --Minimum-Container-Image-size: 300px;
-    --Maximum-Container-Image-size: 400px;
-    /* Colors are going to be moved later to 2 different theme categories */
-    --Background-Color : #0f0f0f;
-    --Navbar-Color : #000000;
+
+
+
 
     --Main-Color : #681dff;
     --H2-Color : #2e2eff;
@@ -49,15 +32,7 @@
     --Border-color : #6c6c6c ;
 /* #3c3c3c ; */
 
-    --Text-Color : #dfdfdf;
-    --Input-Background-Color : #242424;
-    --Input-Highlight-Color: #383838;
-    --Complementary-color: #1981e8;
-    --Row-Background-Color: #000000;
 
-    --Button-Background-Color : #121212;
-
-    
 }
 
 /* Scroll bar */
@@ -82,7 +57,7 @@ html {
 }
 body
 {
-    background-color: var(--Background-Color);
+    background-color: var(--body-background-color);
     overflow-x: hidden;
 }
 
@@ -93,12 +68,11 @@ input[type="text"]
     resize: none;
     border-width: var(--Border-size) ;
     border-radius: var(--Border-radius);
-    border-color: var(--Text-Color);
     border-color: var(--Border-color);
     border-style: solid;
-    background-color: var(--Input-Background-Color );
+    background-color: var(--text-input-background);
     padding: calc(var(--Padding-size));
-    color: var(--Text-Color);
+    color: var(--normal-text-color);
     font-size: 1rem;
     height: calc(var(--Padding-size) * 1 + (1rem * var(--lines)));
     overflow-y: auto;
@@ -114,21 +88,22 @@ input[type="text"]
     padding: calc(var(--Padding-size) * 0.5);
     
     border-radius: var(--Border-radius);
-    border-color: var(--Text-Color);
-    border-color: var(--Border-color);
     border-width: calc(var(--Border-size) * 1 );
 
-    color: var(--Text-Color);
     font-family: Roboto;
     font-weight: 600;
     border-style: solid;
     cursor: pointer;
-    background-color: var(--Button-Background-Color);
     font-size: var(--Paragraph-size);
     
     bottom: calc( calc( var(--Padding-size) * 1.5 + var(--Paragraph-size) + var(--Border-size) * 2) * -1);
 
     transition: border-color 0.2s ease;
+
+    color: var(--normal-text-color);
+    background-color: var(--title-color);
+    border: var(--border-size) var(--border-color) solid;
+
 }
 
 .Button
@@ -159,7 +134,7 @@ input[type="text"]
     padding: 0;
     height: var(--size);
     /* border: var(--Background-Color) 1px solid; */
-    background-color: var(--Text-Color);
+    background-color: var(--normal-text-color);
     width: 100%;
     max-width: -moz-available;
     
@@ -173,9 +148,9 @@ input[type="text"]
     top: 75px;
     right: 0;
     left : 0;
-    height: 60px;
     place-items: center;
     place-content: center;
+    flex-wrap: wrap;
 }
 .indicator
 {

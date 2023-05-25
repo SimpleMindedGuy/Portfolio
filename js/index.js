@@ -285,9 +285,9 @@ const SelectionSort = function(button){
             }
 
             for (let j = i+1; j < length; j++) {
-                container.children[j].style.setProperty('background-color',`var(--Text-Color)` );
+                container.children[j].style.setProperty('background-color',`var(--normal-text-color)` );
             }
-            container.children[i].style.setProperty('background-color',`var(--Text-Color)` );;
+            container.children[i].style.setProperty('background-color',`var(--normal-text-color)` );;
         }
         
     })
@@ -342,7 +342,7 @@ const InsertionSort = function(button){
             }
 
             for (let j = 0; j <= i; j++) {
-                container.children[j].style.setProperty('background-color',`var(--Text-Color)` );
+                container.children[j].style.setProperty('background-color',`var(--normal-text-color)` );
             }
         }
         console.log(await CheckSorted(0))
@@ -386,7 +386,7 @@ async function CheckSorted(Accending)
             }
         }
         for (let index = 0; index < container.children.length; index++) {
-            container.children[index].style.setProperty('background-color',`var(--Text-Color)` );
+            container.children[index].style.setProperty('background-color',`var(--normal-text-color)` );
         }
         return true
     }
@@ -405,7 +405,7 @@ async function CheckSorted(Accending)
             }
         }
         for (let index = 0; index < container.children.length; index++) {
-            container.children[index].style.setProperty('background-color',`var(--Text-Color)` );
+            container.children[index].style.setProperty('background-color',`var(--normal-text-color)` );
         }
         return true
     }
@@ -724,7 +724,7 @@ async function DrawSorted(Sorted,Start,End)
         container.children[i].style.setProperty(`--size`,`${Sorted[index]}px`)
         await delay(1)
         if(i > 0)
-            container.children[i-1].style.setProperty(`Background-color`,`var(--Text-Color)`)
+            container.children[i-1].style.setProperty(`Background-color`,`var(--normal-text-color)`)
         
         index++
     }
@@ -756,7 +756,7 @@ async function HS(button)
 
         await Swap(container,index,0)
         await delay(1)
-        container.children[index].style.setProperty(`Background-color`, `var(--Text-Color)`)
+        container.children[index].style.setProperty(`Background-color`, `var(--normal-text-color)`)
         index-- 
     }
 }
@@ -973,6 +973,6 @@ function getHeight(x)
 async function resetColors()
 {
     for (let index = 0; index < container.children.length; index++) {
-        container.children[index].style.setProperty('Background-color',`var(--Text-Color)`)
+        container.children[index].style.setProperty('Background-color',`var(--normal-text-color)`)
     }
 }

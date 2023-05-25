@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html dark="true"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="./styles/main.css">
+        <script src="./js/onload.js" onload="CheckTheme()"></script>
+        <link rel="icon" type="image/svg" href="./icons/defult-user.svg">
+
+         
+            <title>This website</title>
+        
+    </head>
+
+    <body onload="CheckThemeIcon();checkMSGs()">
+         
+
+        <div class="nav-bar">
+            
+            <div class="logo">
+                <a href="./index.html" class="at">Simple Minded</a>
+            </div>
+
+            <div class="nav-bar-options">
+                <a href="https://www.youtube.com/channel/UC_GqfpUdJa1JVCN-914_Pzw">
+                    <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 576 512" style="fill:#ed333b">
+                        <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" />
+                    </svg>
+                </a>
+                <a href="https://github.com/SimpleMindedGuy">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" ><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                    </svg>
+                </a>
+                <a href="mailto:syn-97@hotmail.com">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" ><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/>
+                    </svg>
+                </a>
+
+            </div>
+
+            <div class="nav-bar-icons">
+                <input type="checkbox" name="theme" id="theme" onclick="ChangeTheme(this)">
+                <label for="theme" class="mode-switch">
+                    
+                    <img src="./icons/drawing.svg" alt="">
+                    <img src="./icons/moon.svg" alt="">
+                    
+                </label>
+                
+                <input type="checkbox" name="" id="nav-menu" unchecked="">
+                    <label for="nav-menu" class="burger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </label>
+                    <div class="nav-bar-menu">
+                         
+                        <a href="https://www.youtube.com/channel/UC_GqfpUdJa1JVCN-914_Pzw" style="--order:1">
+                            <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 576 512" style="fill:#ed333b">
+                                <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" />
+                            </svg>
+                        </a>
+                        <a href="https://github.com/SimpleMindedGuy" style="--order:2">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" ><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:syn-97@hotmail.com" style="--order:3">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" ><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/>
+                            </svg>
+                        </a>
+
+                    </div>
+            </div>
+                
+        </div>
+        
+         
+            <div class="page"> 
+    
+                <div class="float_message">
+                    
+
+                </div>
+
+    <div class="row">
+        
+                <div class="upload-meta-data">
+                    <div>
+                        <div class="user-image-name">
+                            
+                                <a href="./index.html">
+                                    
+    
+        
+<img src="./icons/defult-user.svg" alt="">
+        
+    
+
+ 
+                                </a>
+                                <a href="./index.html">Simple Minded</a>
+                            
+
+                        </div>
+                    </div>
+
+                    <div>
+                        <p>project</p>
+                    </div>
+
+                    <div>
+                        <div class="date">
+                            <div>
+                                <svg viewBox="0 0 3.5189586 3.6247916" class="upload-icons">
+
+        <path style="fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.265;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill" d="M 1.730264,0.02912217 0.14467689,2.045678 1.2363867,1.5664186 1.2223907,3.473672 1.730264,2.3777663 2.2854573,3.4880454 2.2470916,1.5721603 3.3745391,2.1455278 Z" id="path174" sodipodi:nodetypes="ccccccccc"></path>
+    </svg><p>24/05/2023, 04:15 pm</p>
+                                </div>
+                            
+            
+                            <div>
+                                <svg viewBox="0 0 5.2916668 5.2916669" class="upload-icons">
+    <path id="rect841" style="opacity:1;;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers fill stroke" d="m 3.2699189,0.8982329 1.1183475,1.1183474 c 0.026133,0.026133 0.023153,0.07119 -0.00668,0.1010222 L 2.0194053,4.4797797 c -0.029834,0.029834 -1.94637113,0.7537506 -1.93746819,0.7178829 0,0 0.72450053,-1.9302906 0.75433493,-1.960125 L 3.1688944,0.9049151 c 0.029834,-0.029834 0.074892,-0.032815 0.1010247,-0.00668 z" sodipodi:nodetypes="csssssscc"></path>
+    <rect style="opacity:1;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers fill stroke" id="rect880" width="1.6882606" height="0.98188043" x="2.8991148" y="-2.9078808" rx="0.066627115" ry="0.066627115" transform="rotate(45)"></rect>
+    </svg>                            <p>20/05/2023, 6:20 pm</p>
+                            </div>
+                        </div>
+                        <div class="upload-edit">
+                                
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project">
+                    <div>
+                        <h3>Simple Obsidian Setup</h3>
+                        <p class="content">This is my obsidian vault self up with all my scripts, and utilities.
+    
+    The goal of this setup is to make Creating documents and Organizing them much easier, as well as Habit tracking and data visualization.
+    It is still under development, and the script could still needs a lot of documentation, but this version works almost perfectly, If you find any bugs please report that in the issues section, in the github <a href="https://github.com/SimpleMindedGuy/Simple-Obsidian-Vault">repository</a>.
+                        </p>
+                    </div>
+                    <div>
+                        <p>Status : Done </p>
+                        <img src="https://gcdnb.pbrd.co/images/E6noF6NLdH4A.gif?o=1" >
+                    </div>
+                    
+                </div>
+            </div>
+                
+    </div>
+
+    <hr>
+     
+            <div class="row">
+                <div class="upload-meta-data">
+                    <div>
+                        <div class="user-image-name">
+                            
+                                <a href="./index.html">
+<img src="./icons/defult-user.svg" alt="">
+                                </a>
+                                <a href="./index.html">Simple Minded</a>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <p>project</p>
+                    </div>
+
+                    <div>
+                        <div class="date">
+                            
+        
+                            <div>
+                                <svg viewBox="0 0 3.5189586 3.6247916" class="upload-icons">
+
+    <path style="fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.265;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill" d="M 1.730264,0.02912217 0.14467689,2.045678 1.2363867,1.5664186 1.2223907,3.473672 1.730264,2.3777663 2.2854573,3.4880454 2.2470916,1.5721603 3.3745391,2.1455278 Z" id="path174" sodipodi:nodetypes="ccccccccc"></path>
+</svg>                                <p>22/05/2023, 06:40 pm</p>
+                            </div>
+                        </div>
+                        <div class="upload-edit">
+                                
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post">
+                        <h3>Introduction</h3>
+                        <p class="content">
+                            This is my obsidian vault self up with all my scripts, and utilities.
+
+                            The goal of this setup is to make Creating documents and Organizing them much easier, as well as Habit tracking and data visualization.
+                            It is still under development, and the script could still needs a lot of documentation, but this version works almost perfectly, If you find any bugs please report that in the issues section.
+                        </p>
+
+                        <!-- directives:[] -->
+                        <h2 id="how-it-works">How it works</h2>
+                            <p>This setup provides a few tools/Utilities to make Creating documents easier. </p>
+                            <h3 id="simple-commands">Simple Commands</h3>
+                            <p>This is a Utility that reads a file, and looks for specific commands within it, those commands help to create folders, and organizing them.</p>
+                            <p>It is meant to simplify scripts that do useful things, like where to create files, what kind of Data is expected for those files and how to group them together based on Options that are provided for the user.</p>
+                            <p>Look up the Utility documentation for the Utility for more information on what commands do, If you have any suggestions for commands, please create an issue ticket for it, preferably with an <code>enhancement</code> label.</p>
+                            <h3 id="habit-tracking">Habit tracking</h3>
+                            <p>Added some script to read Daily, Weekly, And Monthly note's <strong>MetaData</strong> to display them using graphs and tables, the variables themselves are customizable, all you have to do is edit the 3 files, the editing process is a little lengthy currently, and I'm trying to work out a way to make that process shorter.</p>
+                            <p>But currently it only works for data that is collected from periodic notes, Read the documentation for more information, and understand how it works.</p>
+                            <blockquote>
+                                <p>important
+                                    
+                                You need to make sure that the variables names exactly match the ones you're looking for, and those same variables have to also be included in the templates you're trying to set its value in </p>
+                            </blockquote>
+                            <blockquote>
+                                <p>Example
+                                    
+                                This is an example for data in my daily notes for a week. <br />
+                                For most of those values I set the totals of those values in the YAML that weekly note's file. <br />
+                                the data is all measured against a target so that so that we don't end up with hard to understand graphs where we have very high, and very low values in the graph, instead we have percentages, that are measured against a specific target.<br />
+                                !Screenshot_20230520_164944.png</p>
+                                <div class="images">
+    
+                                    <img src="https://gcdnb.pbrd.co/images/BclMnvbdDEet.png?o=1" />
+                                </div>
+                            </blockquote>
+                    
+                </div>
+            </div>
+        
+    <hr class="dotted-hr">
+            <div class="row">
+                <div class="upload-meta-data">
+                    <div>
+                        <div class="user-image-name">
+                            
+                                <a href="./index.html">
+<img src="./icons/defult-user.svg" alt="">
+                                </a>
+                                <a href="./index.html">Simple Minded</a>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <p>project</p>
+                    </div>
+
+                    <div>
+                        <div class="date">
+                            
+        
+                            <div>
+                                <svg viewBox="0 0 3.5189586 3.6247916" class="upload-icons">
+
+    <path style="fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.265;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill" d="M 1.730264,0.02912217 0.14467689,2.045678 1.2363867,1.5664186 1.2223907,3.473672 1.730264,2.3777663 2.2854573,3.4880454 2.2470916,1.5721603 3.3745391,2.1455278 Z" id="path174" sodipodi:nodetypes="ccccccccc"></path>
+</svg>                                <p>22/05/2023, 06:40 pm</p>
+                            </div>
+                        </div>
+                        <div class="upload-edit">
+                                
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post">
+                <h1 id="important">Important</h1>
+                <p>To be able to use the commands, you need to have a templater command </p>
+                <ul>
+                <li><code>&lt;%* tp.user.NewDocument(tp,true) %&gt;</code> <br />
+                if you are trying to read the commands in the current file </li>
+                <li><code>&lt;%* tp.user.NewDocument(tp,false) %&gt;</code><br />
+                if you are trying to read the commands in the 'NewDocument' File</li>
+                </ul>
+                <h1 id="keywords">Keywords</h1>
+                <h2 id="description-file">Description File</h2>
+                <p>The main file of specific document, any document that is made will look for template folders, the main document file template would be called <code>Description Template</code>.</p>
+                <h2 id="key">Key</h2>
+                <p>Is a value that will end up being added to the metadata of the Description file.</p>
+                <blockquote>
+                  <p>[!Example] Example <br />
+                  Select : [one,two,three] =&gt; number<br />
+                  will result in a value called <code>number</code> with the chosen value<br />
+                  it should look like this <br />
+                  <code>number:one</code></p>
+                </blockquote>
+                <h2 id="text">Text</h2>
+                <p>Any text that is expected to be displayed in an input dialogue for the user, to explain what kind of input is required </p>
+                <h2 id="value">Value</h2>
+                <p>is anything that can be used as an option to chose from. <br />
+                it can be a number, or it can be a text.</p>
+                <h2 id="tags">tags</h2>
+                <p>a metadata value that holds all tags inside the document</p>
+                <h2 id="alias">alias</h2>
+                <p>A metadata value that holds all text values that can refer/link to the document</p>
+                <h1 id="file-structure">File structure</h1>
+                <blockquote class="dirtree language-dirtree">- / Templates &lt;= Root folder for the utility
+        - Decryption &lt;= Template File
+        - New Document &lt;= the Main file where the utility reads instructions
+        - Description Template &lt;= Template File
+        - Progress Template
+        - Tracking Template
+        - Overview Template &lt;= Overview Template
+        - Activity &lt;= The instruction file that will be read, when pointed at when using the nextfile:=&gt; Activity command
+        - /project &lt;= Template Folder
+                - Description Template &lt;= Template File
+                - Progress Template
+                - Tracking Template
+                - Overview Template     
+                - Project &lt;= The instruction file that will be read, when pointed at when using the nextfile:=&gt; Project command
+                - /Program      &lt;= Template Folder
+                        - Description Template  &lt;= Template File
+                        - Progress Template     
+                        - Tracking Template     
+                        - Program &lt;= The instruction file that will be read, when pointed at when using the nextfile:=&gt; Program command</blockquote>
+                <h3 id="createdatekey---key--lastupdatedkey---key--titlekey--keyparentdocumentkeykey">CreateDateKey : =&gt; <code>key</code> , LastUpdatedKey : =&gt; <code>key</code> , TitleKey :=&gt; <code>key</code>,ParentDocumentKey:=&gt;<code>key</code></h3>
+                <p>Changes the Key for or the MetaData variable name for the document's Created date/Modified Date/ Title</p>
+                <blockquote>
+                  <p>[!eexample] Example<br />
+                  CreateDateKey : =&gt; 🗓️<br />
+                  stead of storing the created date in a <br />
+                  <code>Created: 21/1/2020</code> <br />
+                  it stores it like this <br />
+                  <code>🗓️: 21/1/2020</code></p>
+                </blockquote>
+                <p>those can be later used in data views and other related things.</p>
+                <h1 id="commands">Commands</h1>
+                <h2 id="set--valueor-value1value2value3-key">Set : <code>value</code>or <code>[value1,value2,value3]</code>=&gt; <code>key</code></h2>
+                <p>Sets a value or a  list of values to a key</p>
+                <blockquote>
+                  <p>[!example] <br />
+                  Set: hello world =&gt; sayHello<br />
+                  Stores "hello world" in the variable <code>sayHello</code><br />
+                  Set: [1,2,3,4] =&gt; Numbers<br />
+                  Stores array [1,2,3,4] in the variable <code>Numbers</code></p>
+                </blockquote>
+                <h2 id="get--key1-key2">Get : <code>key1</code>=&gt; <code>key2</code></h2>
+                <p>Reads the value of <code>key1</code> from the current file's metadata, and store it in <code>key2</code> in the scripts data</p>
+                <h2 id="key-1">$(<code>key</code>)</h2>
+                <p>Adds the ability to put a value of a variable into the document instead of just as MetaData. </p>
+                <p>for example </p>
+                <blockquote>
+                  <p>[!example]<br />
+                  using the commands <br />
+                  Date :=&gt; Day<br />
+                  \$(Day)<br />
+                  will replace <code>$(Day)</code> with : 2020/11/10 - 05:10 am</p>
+                </blockquote>
+                <p>the values will be set at the last stage (when building the document or file), to make sure that the key actually refer to a value. </p>
+                <h2 id="dialog---text-">Dialog : { <code>Text</code> }</h2>
+                <p>can contain any amount of text, The text is later used to be displayed in the input box dialog, to help guide the user with what type of input is expected. </p>
+                <h2 id="layer--valuevalue--key-optional">Layer : [<code>value</code>,<code>value</code>...] (=&gt; <code>Key</code>) optional</h2>
+                <p>Shows an input dialog, for the user, the user can only chose one of them, then the value is stored in an array called <code>Layers</code>, each <code>Layer</code> represent a fold, the folders then are created in ascending order ( first layer is created first), each containing the folder after it.</p>
+                <p>Note that too many layers will negatively affect the performance of your vault.</p>
+                <p>storing that value in a <code>key</code> is optional.</p>
+                <p>I only use those keys in metadata.</p>
+                <h2 id="select---valuevalue--key">Select : [ <code>value</code>,<code>value</code>] =&gt; <code>key</code></h2>
+                <p>shows input dialog for the user with multiple values that are stored inside the brackets ([ ]), where each <code>value</code> is separated by a comma ( , ).</p>
+                <p>User can only pic only one value, and the value is then stored in a key (<code>key</code>), the key can be any string( Text ) value. the key can be later used to write the value in the document, or in meta data.</p>
+                <p>its important to note that Keys can only be assigned once, to avoid overwriting values.</p>
+                <h2 id="options---valuevalue--key">Options : [ <code>value</code>,<code>value</code>] =&gt; <code>key</code></h2>
+                <p>shows input dialog for the user with multiple values that are stored inside the brackets ([]), where each <code>value</code> is separated by a comma ( , ).</p>
+                <p>User can  pic any amount of those values, and the values is then stored in a key (<code>key</code>), the key can be any string( Text ) value. the key can be later used to write the value in the document, or in meta data.</p>
+                <h2 id="input---key">Input : =&gt; <code>key</code></h2>
+                <p>Shows an input dialog for the user to add a text value, instead of choosing from options, can take any amount of text, and is assign to a key(<code>key</code>).</p>
+                <h2 id="list---key">List : =&gt; <code>key</code></h2>
+                <p>Similar to Input, but it allows the user to add as many values as they want, until the user enters an empty value.</p>
+                <p>This is intended for Tags and Aliases, where the user might need to add multiple values to the document.</p>
+                <h2 id="check----key">Check :  =&gt; <code>key</code></h2>
+                <p>Shows an input dialog for the user  with options for True/False values.</p>
+                <h2 id="nextfile--key-or-templatefolder-name">NextFile :=&gt; <code>key</code> OR <code>templatefolder name</code></h2>
+                <p>Tells the script to look for the next file of instructions , looks for folders first, and The search is based on the value of the given key (<code>key</code>).</p>
+                <blockquote>
+                <p>[!example] Example<br />
+                Using the <code>NextFile :=&gt;</code>   command<br />
+                Will look into the <code>Layers</code> variable, then read the first index if used for the first time, or read the next index.<br />
+                when using the <br />
+                NextFile :=&gt;  command<br />
+                while in the <code>new Document</code> file<br />
+                with values ["Activity"] in the <code>Layers</code> variable.<br />
+                the script will look for if <code>Layers</code> have any values.<br />
+                Then look for the First value <code>Activity</code>, then move to a Folder with the name "Activity", then look for a file with the same name</p>
+            <blockqoute class="dirtree language-dirtree">- /Template * where the script is currently at
+                - new Document &lt;= First file of instructions
+                - /Activity
+                    - Activity &lt;= Next File of instructions</blockqoute>
+                <p>if later on, another <code>layer</code> is added ( in this case "Project"), in the activity file we use the <code>NextFile</code> command. <br />
+                the script will look if the the <code>Layers</code> variable have more values in it. <br />
+                if not then the script will stop there, and no documents will be made.</p>
+                <p>if there is another value to read ["Activity"&lt;,"Project"], then move to a Folder with the name "Project", then look for a file with the same name.</p>
+            <blockquote class="dirtree language-dirtree">- /Template
+        - new Document 
+        - /Activity  * where the script is currently at
+            - Activity &lt;= current file of instructions 
+            - /Project
+                - Project &lt;= Next File of instuctions</blockquote>
+                </blockquote>
+                <h2 id="setdateformat--value">SetDateFormat :=&gt; <code>value</code></h2>
+                <p>Set the date format.</p>
+                <p>The default value is <code>YYYY/MM/DD - hh:mm a</code> and the result would look like this <code>2020/12/03 - 01:50 pm</code> <a href="https://momentjs.com/docs/#/displaying/format/">learn more</a></p>
+                <h2 id="date--key">Date :=&gt; <code>key</code></h2>
+                <p>Stores a current date in key, using the last set format, using the <code>SetDateFormat</code> Command.</p>
+                <h2 id="setdate--date--key">SetDate : (<code>date</code>) =&gt; <code>key</code></h2>
+                <p>Set the date value to the key, based on the current Date format.<br />
+                The only reason I use this is to store files that are in </p>
+                <h2 id="overview">Overview</h2>
+                <p>Overview file is a file that tracks a value in the description file of a document.<br />
+                it is a kanban template with multiple lists, when a document is made, a link to the description file of that document is added to the first list in the kanban. </p>
+                <p>moving a link from one list to another will change a <code>"key"</code> value in the metadata of the description file that is linked to, the <code>key</code> should already exist in the description file. </p>
+                <h3 id="overviewkey----key">OverviewKey:   =&gt; <code>key</code></h3>
+                <p>tells the overview file what value to edit when moving items in the kanban file from one list to another, "<code>key</code>" is text value that exists in the metadata of the description file.</p>
+                <h3 id="overviewlayer----key---or---number--or--foldername">OverviewLayer:   =&gt; <code>key</code>   OR   <code>number</code>  OR  <code>foldername</code></h3>
+                <p>tells the Script at which layer to make the Overview folder, you can only make one overview file within specific layers.<br />
+                Takes either a number, or name a folder name. </p>
+                <blockquote>
+                  <p>[!Example]<br />
+                  If the values (OverviewKey) and (OverviewLayer) are assigned</p>
+                  <ul>
+                  <li>the script will first look for an "Overview Template" file, at the chosen <code>layer</code></li>
+                  <li>if we made a document with the layers </li>
+                  </ul>
+                <blockquote class="dirtree language-dirtree">- /Activity
+        - /Project
+            - Overview Template
+            - /Program</blockquote>
+                  <ul>
+                  <li>And the value for <code>OverviewLayer</code> is "Project"</li>
+                  <li>then the script will look for an <code>Overview Template</code> in side the "Project" folder.<ul>
+                  <li>if the template is not found, the overview template wont be created</li></ul></li>
+                  <li>after the file is created or found, then the script will create a link to the <code>description file</code>, in the first list of the <code>overview file</code>.</li>
+                  </ul>
+                </blockquote>
+                <h2 id="movemedia---path">MoveMedia :=&gt;  <code>path</code></h2>
+                <p>moves attachments from where ever they are, to a the specified<br />
+                the path can include <code>key</code> to use values in current file's metadata values, from input or can be just a text based value.</p>
+                <p>when using a "fixed" path <br />
+                just type the path as normal : path/to/folder<br />
+                when using variables  use the current format :  /\$(<code>key</code>)/\$(<code>key</code>)/\$(<code>key</code>)<br />
+                note : using the character \$ might end up rendering the as latex, but that wont affect how the script functions. </p>
+                <p>It can also be left empty and use the <code>Layers</code> values instead, and will move the files based on the layer values.</p>
+                <p>right now it will move every attachment, except for things that are in the <strong>Banner</strong> folder.</p>
+                <h2 id="builddocument--">BuildDocument : =&gt;</h2>
+                <ol>
+                <li>Creates folders if they don't exist<ul>
+                <li>folders are created based on the <code>Layers</code> array.</li>
+                <li>folders are created based on their index in ascending order.</li>
+                <li>each folder will contain the one after it.</li></ul></li>
+                <li>adds the document to an overview file if the user specifies what key to track and at what folder to create it.</li>
+                <li>Create document files, and adding the metadata.</li>
+                </ol>
+                <h3 id="template-files">Template files</h3>
+                <p>The way templates will work :</p>
+                <ul>
+                <li>Script will go to the folders in the <code>Layers</code> array<ul>
+                <li>the Template folders are expected to be found inside the <code>Tempaltes folder</code></li>
+                <li>Each value in the <code>Layers</code> represent a folder.</li>
+                <li>Each <code>Layer</code> should contain the <code>Layer</code> after it. </li></ul></li>
+                </ul>
+                <blockquote>
+                  <p>[!example]<br />
+                  if the <code>Layers</code> array contain the values [Activity , Project , Program], the script will look inside the Templates folder.<br />
+                  And it will look for the <code>Activity</code> folder, then will look inside the <code>Activity</code> folder for the <code>Project</code> folder, then will look inside the <code>Project</code> folder for <code>Program</code> folder.</p>
+                </blockquote>
+                <ul>
+                <li>When the last <code>Layer</code> is reached the script will look for <code>Template files</code>.<br />
+                script will look for any file with the suffix Template in their name in the current layer. </li>
+                </ul>
+                <blockquote>
+                  <p>[!example]<br />
+                  if we want to make template files for the <code>layer</code> <code>Activity/Project/Program</code>.<br />
+                  then the utility will look for</p>
+                <blockquote class="dirtree language-dirtree">- / Templates &lt;= Root folder for the utility
+    - Decryption &lt;= Template File
+    - New Document &lt;= the Main file where the utility reads instructions
+    - /Activity &lt;= Template Folder
+        - Description Template &lt;= Template File
+        - Progress Template
+        - /project &lt;= Template Folder
+            - Description Template &lt;= Template File
+            - Progress Template
+            - Tracking Template
+            - Overview Template     
+            - /Program      &lt;= Template Folder
+                - Description Template  &lt;= Template File</blockquote>
+                </blockquote>
+                <ul>
+                <li><p>If there are no Template Files in the last <code>Layer</code>, or only <code>description Template / Overview Template</code>, the script will move back to the previous layer, this will be repeated until the script get back to <code>Templates folder</code>.</p></li>
+                <li><p>If templates are not found, then the document will be created empty. </p></li>
+                <li><p>if one or more Template Files are found, the script will display a dialog for the user to chose one or more, or even none Template Files to be included in the file. </p></li>
+                </ul>
+                <blockquote>
+                  <p>[!Note]<br />
+                  Template files MUST include the suffix Template in their file name.<br />
+                  and any "default" metadata should be written into the file it self.</p>
+                </blockquote>
+                <h2 id="buildinfile--">BuildInFile : =&gt;</h2>
+                <p>Execute command in the current file, The only use for this now is to add metadata for Daily and weekly notes.</p>
+                <h2 id="buildsubdoc--template-path-requiredbuild-path-optional">BuildSubDoc :=&gt; <code>Template path</code> (Required),<code>Build path</code> (optional)</h2>
+                <p>Creates a folder that contains "sub Documents", that that are "linked" to the current parent document using the <code>parent</code> key.<br />
+                the <code>parent</code> key can be changed using the <code>ParentKey =&gt; newKey</code> command</p>
+                <p>just like <code>MoveMedia</code> the path value can be a fixed value or can be made of data from the metadata or some input values </p>
+                <p>note : In this command the <code>Layers</code> values will be used for both</p>
+                <ul>
+                <li>Looking for the templates if <code>Template path</code> is left empty</li>
+                <li>Decide where to build the project if <code>build path</code> is left empty</li>
+                </ul>
+                <p>note : when looking for Templates (<code>Template path</code>) the script will assume that the path is inside the Templates folder, whereas The build path have different rules</p>
+                <p>If the build path is empty, and Layers is empty, the script will create folder inside the current document folder, and build the sub document inside it. </p>
+                <p>if path is provided then the script will build folders (if necessary) starting from vault's root folder, to the last one, and build sub document folder in it. </p>
+                <p>if all of the expected values are empty, then the script will create the sub document folder, inside the main document folder</p>
+                <h2 id="buildsubnote--template-path-required-build-path-optional">BuildSubNote :=&gt; <code>Template path</code> (Required), <code>Build path</code> (Optional)</h2>
+                <p>Creates a note in a folder inside the current document, that will contain all <code>sub Notes</code> and they will link back to the main  document using the <code>parent</code> key.</p>
+                <p>if path is left empty then the script will create a folder inside the Document's folder called (SubNotes) and Build the SubNotes in it.</p>
+                <h2 id="stop-">Stop :=&gt;</h2>
+                <p>Stops marks the end of execution and removes the commands from  the current file. </p>
+                <blockquote>
+                  <p>[!important]  Always end with the stop command<br />
+                  It is very important to always end the commands with the stop command failing to do so will cause the script to infinately loop over the commands, and may result in un-predicted behaviour.<br />
+                  The only exception fo this rule is <br />
+                  not needed when using the <code>BuildDocument/BuildSubDocument/BuildSubNote</code> command</p>
+                </blockquote>
+                <h1 id="command-pages-and-buttons">Command Pages and Buttons</h1>
+                <p>The buttons plugin, allows us to refer to a note in the Template folder, and when clicking on the button it then appends the note it is referred to, then executes any templater commands it contains in that note </p>
+                <p>We can take advantages of this functionality, by making multiple notes that have sets of commands in them.<br />
+                To make this work we have to tell the Script that i needs to read the current file. </p>
+                <p>what happens then is that the button embeds the commands inside the current file, then executes the script, reads and executes all the commands/instructions, then hopefully if we remember to add the <code>stop</code> command it will stop and remove all commands from the current file after execution.</p></div>
+            </div>
+        
+    <hr class="dotted-hr">
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
