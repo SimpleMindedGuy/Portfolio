@@ -98,7 +98,7 @@ input::-webkit-inner-spin-button {
 
     /* nav bar styling */
     --nav-bar-height : 75px;
-    --nav-bar-grid : 2.5fr 6fr 2.5 fr;
+    --nav-bar-grid : 2.5fr 6fr 2.5fr;
     --nav-menu-height :400px;
 
     /* borders */
