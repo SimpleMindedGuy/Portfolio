@@ -1798,6 +1798,9 @@ h2 > .profile-edit
     grid-template-columns: var(--skill-row-grid);
 }
 
+
+
+
 .skill p 
 {
     font-size: calc(var(--p-size) * 0.8);
@@ -2483,12 +2486,18 @@ input[type="checkbox"]:checked + .permissions > label
     gap: 15px
 }
 
+.cards:hover .card:not(:hover)
+{
+    transform: scale(80%) ;
+    filter : grayscale(100%)
+}
+
 .card 
 {
     border: var(--normal-text-color) 2px solid;
     border-radius: var(--border-radius);
     background: rgb(84,3,177);
-    background: linear-gradient(15deg, var(--visited-anchor-text-color) 3%, var(--normal-text-color) 110%);
+    background: linear-gradient(15deg, var(--visited-anchor-text-color) 3%, var(--anchor-text-color) 110%);
     display: grid;
     padding: var(--padding);
     width: 200px;
@@ -2497,6 +2506,8 @@ input[type="checkbox"]:checked + .permissions > label
     place-self: center;
     margin : auto;
     transition: all 0.5s ease;
+    
+    box-shadow: 0.0rem 0.0rem 0.0rem 0.0rem var(--normal-text-color);
 }
 
 
@@ -2504,7 +2515,15 @@ input[type="checkbox"]:checked + .permissions > label
     height: auto;
     width: 100px;
     border-radius: 0px;
+    z-index: 5;
     
+}
+
+
+.card:hover
+{
+    transform: scale(105%);
+    box-shadow: 0.0rem 0.0rem 0.5rem 0.2rem var(--normal-text-color);
 }
 
 @media screen and (max-width : 1400px )
