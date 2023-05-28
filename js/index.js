@@ -127,13 +127,15 @@ async function RenderFile(File,DropZone)
 async function RemoveFile(Image)
 {
     let Index = Array.prototype.indexOf.call(Image.parentElement.children, Image);
-    let Input = Image.parentElement.parentElement.querySelector("input[type='file']");
+    console.log("Index")
+    let Input = Image.parentElement.parentElement.parentElement.querySelector("input[type='file']");
+
 
     const TextArea = Image.parentElement.parentElement.querySelector(`textarea`);
     const Files = [...Input.files];
 
     Files.splice(Index, 1);
-    console.log(`[img${Index+1}]`)
+    // console.log(`[img${Index+1}]`)
 
     
     const NewData = new ClipboardEvent("").clipboardData || new DataTransfer();
@@ -157,7 +159,7 @@ async function RemoveFile(Image)
 
     Image.remove();
     Input.files = NewData.files;
-    console.log(Files)
+    // console.log(Files)
     
 }
 

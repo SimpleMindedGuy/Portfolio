@@ -91,6 +91,8 @@
 
                 </div>
 
+                
+
                 <div class="row bio">
                     <h1 style="text-shadow : 0.1rem 0.5rem 0.15rem  var(--visited-anchor-text-color) ;
                     ">Simple Minded </h1>
@@ -152,7 +154,27 @@
 <hr>
 
 
+<div class="row">
+    <h1>Form Example</h1>
+    <form enctype="multipart/form-data" method="POST" action="/posts">
+        <input type="text" name="id" value="6471e8e36cb52f7f94fe2a44" style="display: none;">
+        <div class="input post-ui">
+            <p>Post content</p>
+            <textarea class="post-input" name="Post_Content" oninput="ActiveTextarea(this)" onresize="ActiveTextarea(this)" ondragover="ActiveDropZone(this)" ondragleave="DeActiveDropZone(this)" ondrop="DropFile(this,event)"></textarea>
 
+            <input name="images" type="file" id="file-input" onclick="ReadInputFiles(this)" onchange="InputFiles(this , event)" multiple="">
+            <div class="dropzone" ondragover="ActiveDropZone(this)" ondragleave="DeActiveDropZone(this)" ondrop="DropFile(this,event)">
+            </div>
+            <p class="note">drag and drop to add pictures</p>
+
+        </div>
+        <div class="buttons">
+            <input type="submit" value="Post">
+            <label for="file-input" type="button" class="cancel-button" value="add image"> Add image</label>
+        </div>
+    </form>
+
+</div> 
 
             <div class="upload-meta-data">
                 <div>
@@ -435,7 +457,7 @@ you can click the button to use/test the script <a href="./assignment.html">here
 
                             
                                 
-                                    <img alt="" src="./img/Flappy.gif">
+                                    <img alt="" src="https://gcdnb.pbrd.co/images/ptK7WscExbqd.gif?o=1">
                                 
                             
                         </div>
@@ -519,7 +541,7 @@ you can click the button to use/test the script <a href="./assignment.html">here
 
                             
                                 
-                                    <img alt="" src="./img/Dino game GIF.gif">
+                                    <img alt="" src="https://gcdnb.pbrd.co/images/YuGyqlM3iqA7.gif?o=1">
                                 
                             
                         </div>
@@ -605,7 +627,7 @@ you can click the button to use/test the script <a href="./assignment.html">here
 
                             
                                 
-                                    <img alt="" src="./img/S-DES.gif">
+                                    <img alt="" src="https://gcdnb.pbrd.co/images/88Su4uMMuMbZ.gif?o=1">
                                 
                             
                         </div>
@@ -689,7 +711,7 @@ you can click the button to use/test the script <a href="./assignment.html">here
 
                             
                                 
-                                    <img alt="" src="./img/Pong GIF.gif">
+                                    <img alt="" src="https://gcdnb.pbrd.co/images/QXUDSMbfXjhq.gif?o=1">
                                 
                             
                         </div>
@@ -773,7 +795,7 @@ you can click the button to use/test the script <a href="./assignment.html">here
 
                             
                                 
-                                    <img alt="" src="./img/FB giff.gif">
+                                    <img alt="" src="https://gcdnb.pbrd.co/images/ZyjuXaB2ziLc.gif?o=1">
                                 
                             
                         </div>

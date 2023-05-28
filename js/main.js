@@ -467,7 +467,6 @@ function ShowDropedFile(dropzone,file,target,input)
 function RemoveFile(Xbutton)
 {
 
-    setTimeout(()=>{
         let dropzone = Xbutton.parentElement.parentElement.parentElement;
 
         let file = Xbutton.parentElement.parentElement;
@@ -549,7 +548,6 @@ function RemoveFile(Xbutton)
                 </label>`
             }
         }
-    }, 100);
     
 }
 
@@ -638,43 +636,6 @@ function ActiveTextarea(textarea)
 }
 
 
-
-async function RemoveFile(Image)
-{
-    let Index = Array.prototype.indexOf.call(Image.parentElement.children, Image);
-    let Input = Image.parentElement.parentElement.querySelector("input[type='file']");
-
-    const TextArea = Image.parentElement.parentElement.querySelector(`textarea`);
-    const Files = [...Input.files];
-
-    Files.splice(Index, 1);
-    console.log(`[img${Index+1}]`)
-
-    
-    const NewData = new ClipboardEvent("").clipboardData || new DataTransfer();
-    for(const File of Files)
-    {
-        NewData.items.add(File);
-    }
-    
-    const Expression = new  RegExp(`\\[img${Index+1}\\]`)
-    TextArea.value = TextArea.value.replace(Expression,"")         ;
-    
-    const Matches =  TextArea.value.match(/\[img\d\]/gm)
-
-    if(Matches && Matches.length > 0)
-    {
-        for (let i = Index; i <= Matches.length; i++) {
-            const exp = new RegExp(`\\[img${i+1}\\]`)
-            TextArea.value = TextArea.value.replace(exp,`[img${i}]`);
-        }
-    }
-
-    Image.remove();
-    Input.files = NewData.files;
-    console.log(Files)
-    
-}
 
 
 let container 
